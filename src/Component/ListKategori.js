@@ -8,11 +8,11 @@ class ListKategori extends React.Component {
                 <h3>Kategori</h3>
                 <hr/>
                 <ListGroup>
-                    <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                    <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                    <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                    {
+                        this.props.dataKategori.map((dataKategori, index) => (
+                            <ListGroup.Item>{dataKategori.nama}</ListGroup.Item>
+                        ))
+                    }
                 </ListGroup>
             </Col>
         )

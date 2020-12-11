@@ -1,18 +1,18 @@
 import React from 'react';
-import { Col, Card, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import { numberWithCommas } from '../Utils/FormatNumber';
 
 class ListMenu extends React.Component {
     render() {
         return(
-            <Card style={{ width: '18rem' }} className='mr-3 mb-3'>
-                <Card.Img variant="top" src="holder.js/100px180" />
+            <Card style={{ width: '18rem' }} className='mr-3 mb-3 shadow'>
+                <Card.Img variant="top" src={"asset/images/" + this.props.dataProduk.category.nama.toLowerCase() + '/' + this.props.dataProduk.gambar} />
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>{this.props.dataProduk.nama}</Card.Title>
                     <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                        <strong>Rp. {numberWithCommas(this.props.dataProduk.harga)}</strong>
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Tambah Keranjang</Button>
                 </Card.Body>
             </Card>
         )

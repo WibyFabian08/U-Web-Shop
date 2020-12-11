@@ -47,7 +47,7 @@ class NavigationBar extends React.Component {
                     </Navbar.Collapse>
                 </Navbar>
     
-                <ListKeranjang handleClose={this.handleClose} showModal={this.state.showModal}></ListKeranjang>
+                <ListKeranjang handleClose={this.handleClose} showModal={this.state.showModal} dataKeranjang={this.props.dataKeranjang}></ListKeranjang>
             </Fragment>
         )
     }
