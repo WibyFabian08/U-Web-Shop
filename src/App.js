@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import NavigationBar from './Component/NavigationBar';
+import ListKategori from './Component/ListKategori';
+import ListMenu from './Component/ListMenu'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <NavigationBar></NavigationBar>
+      <Row>
+        <ListKategori></ListKategori>
+        <Col className='mt-2'>
+          <h3>Daftar Menu</h3>
+          <hr></hr>
+          <Row>
+            <ListMenu></ListMenu>
+            <ListMenu></ListMenu>
+            <ListMenu></ListMenu>
+            <ListMenu></ListMenu>
+          </Row>
+        </Col>
+
+      </Row>
+    </Container>
   );
 }
 

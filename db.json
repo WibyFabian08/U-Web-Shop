@@ -1,0 +1,321 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "nama": "Semen"
+    },
+    {
+      "id": 1,
+      "nama": "Bata"
+    },
+    {
+      "id": 3,
+      "nama": "Pasir"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Semen Batu putri",
+      "harga": 50000,
+      "is_ready": true,
+      "gambar": "semen_batu_raja.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Semen"
+      }
+    },
+    {
+      "id": 2,
+      "kode": "K-02",
+      "nama": "Semen Garuda",
+      "harga": 50000,
+      "is_ready": true,
+      "gambar": "semen_garuda.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Semen"
+      }
+    },
+    {
+      "id": 3,
+      "kode": "K-03",
+      "nama": "Semen Holcim",
+      "harga": 50000,
+      "is_ready": true,
+      "gambar": "semen_holcim.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Semen"
+      }
+    },
+    {
+      "id": 4,
+      "kode": "K-04",
+      "nama": "Semen Jakarta",
+      "harga": 50000,
+      "is_ready": true,
+      "gambar": "semen_jakarta.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Semen"
+      }
+    },
+    {
+      "id": 5,
+      "kode": "K-05",
+      "nama": "Semen Merah Putih",
+      "harga": 50000,
+      "is_ready": true,
+      "gambar": "semen_merah_putih.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Semen"
+      }
+    },
+    {
+      "id": 6,
+      "kode": "K-06",
+      "nama": "Semen Tiga Roda",
+      "harga": 50000,
+      "is_ready": true,
+      "gambar": "semen_tiga_roda.jpg",
+      "category": {
+        "id": 1,
+        "nama": "Semen"
+      }
+    },
+    {
+      "id": 7,
+      "kode": "K-07",
+      "nama": "Bata Merah",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "bata_merah.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 8,
+      "kode": "K-08",
+      "nama": "Batako",
+      "harga": 700000,
+      "is_ready": true,
+      "gambar": "batako.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 9,
+      "kode": "K-09",
+      "nama": "Batu Andesit",
+      "harga": 950000,
+      "is_ready": true,
+      "gambar": "batu_andesit.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 10,
+      "kode": "K-10",
+      "nama": "Batu Bali",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "batu_bali.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 11,
+      "kode": "K-11",
+      "nama": "Batu Candi",
+      "harga": 800000,
+      "is_ready": true,
+      "gambar": "batu_candi.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 12,
+      "kode": "K-12",
+      "nama": "Batu Kali",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "batu_kali.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 13,
+      "kode": "K-13",
+      "nama": "Batu Knecker",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "batu_knecker.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 14,
+      "kode": "K-14",
+      "nama": "Batu Split",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "batu_split.jpg",
+      "category": {
+        "id": 2,
+        "nama": "Bata"
+      }
+    },
+    {
+      "id": 15,
+      "kode": "K-15",
+      "nama": "Pasir Beton",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "pasir_beton.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Pasir"
+      }
+    },
+    {
+      "id": 16,
+      "kode": "K-16",
+      "nama": "Pasir Elod",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "pasir_elod.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Pasir"
+      }
+    },
+    {
+      "id": 17,
+      "kode": "K-17",
+      "nama": "Pasir Merah",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "pasir_merah.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Pasir"
+      }
+    },
+    {
+      "id": 18,
+      "kode": "K-18",
+      "nama": "Pasir Pasang",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "pasir_pasang.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Pasir"
+      }
+    },
+    {
+      "id": 19,
+      "kode": "K-19",
+      "nama": "Pasir Sungai",
+      "harga": 750000,
+      "is_ready": true,
+      "gambar": "pasir_sungai.jpg",
+      "category": {
+        "id": 3,
+        "nama": "Pasir"
+      }
+    }
+  ],
+  "keranjangs": [
+    {
+      "jumlahPesan": 2,
+      "dataKeranjang": {
+        "jumlahPesan": 1,
+        "totalHarga": 50000,
+        "product": {
+          "id": 1,
+          "kode": "K-01",
+          "nama": "Semen Batu putri",
+          "harga": 50000,
+          "is_ready": true,
+          "gambar": "semen_batu_raja.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Semen"
+          }
+        },
+        "id": 1
+      },
+      "id": 1
+    },
+    {
+      "jumlahPesan": 4,
+      "totalHarga": 200000,
+      "product": {
+        "id": 2,
+        "kode": "K-02",
+        "nama": "Semen Garuda",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_garuda.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 2
+    },
+    {
+      "jumlahPesan": 5,
+      "totalHarga": 250000,
+      "product": {
+        "id": 3,
+        "kode": "K-03",
+        "nama": "Semen Holcim",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_holcim.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 3
+    },
+    {
+      "jumlahPesan": 1,
+      "totalHarga": 50000,
+      "product": {
+        "id": 4,
+        "kode": "K-04",
+        "nama": "Semen Jakarta",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_jakarta.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 4
+    }
+  ],
+  "pesanans": []
+}
