@@ -10,7 +10,12 @@ class ListKategori extends React.Component {
                 <ListGroup>
                     {
                         this.props.dataKategori.map((dataKategori, index) => (
-                            <ListGroup.Item>{dataKategori.nama}</ListGroup.Item>
+                            <ListGroup.Item
+                             key={index} onClick={() => this.props.handlePilihKategori(dataKategori.nama)}
+                             className={this.props.pilihKategori == dataKategori.nama && 'bg-primary'}
+                            >
+                                {dataKategori.nama}
+                            </ListGroup.Item>
                         ))
                     }
                 </ListGroup>

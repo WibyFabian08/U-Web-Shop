@@ -12,7 +12,7 @@ class ListKeranjang extends React.Component {
                     <ListGroup>
                         {
                             this.props.dataKeranjang.map((dataKeranjang, index) => (
-                                <ListGroup.Item>{dataKeranjang}</ListGroup.Item>
+                                <ListGroup.Item key={index}>{dataKeranjang}</ListGroup.Item>
                             ))
                         }
                     </ListGroup>

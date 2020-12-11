@@ -11,11 +11,12 @@ class App extends React.Component {
   state = {
     dataProduk: [],
     dataKategori: [],
-    dataKeranjang: []
+    dataKeranjang: [],
+    pilihKategori: 'Semen'
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3004/products')
+    axios.get('http://localhost:3004/products?category.nama=' + this.state.pilihKategori)
     .then((response) => {
       const dataProduk = response.data;
       this.setState({
@@ -52,12 +53,31 @@ class App extends React.Component {
     })
   }
 
+  handlePilihKategori = (kategori) => {
+    this.setState({
+      pilihKategori: kategori,
+      dataProduk: []
+    })
+
+    axios.get('http://localhost:3004/products?category.nama=' + kategori)
+    .then((response) => {
+      const dataProduk = response.data;
+      this.setState({
+        dataProduk: dataProduk 
+      })
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+  }
+
   render() {
     return (
       <Container>
         <NavigationBar dataKeranjang={this.state.dataKeranjang}></NavigationBar>
         <Row>
-          <ListKategori dataKategori={this.state.dataKategori}></ListKategori>
+          <ListKategori dataKategori={this.state.dataKategori} handlePilihKategori={this.handlePilihKategori} pilihKategori={this.state.pilihKategori}></ListKategori>
           <Col className='mt-2'>
             <h3>Daftar Menu</h3>
             <hr></hr>

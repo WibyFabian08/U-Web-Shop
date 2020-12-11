@@ -9,3 +9,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.list-kategori {
+  background-color: blue;
+}
+
+.list-card:hover {
+  transform: scale(1.02);
+}
