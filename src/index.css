@@ -10,10 +10,16 @@ code {
     monospace;
 }
 
-.list-kategori {
+.list-kategori:hover {
   background-color: blue;
 }
 
 .list-card:hover {
   transform: scale(1.02);
+  cursor: pointer;
+}
+
+.list-keranjang {
+  overflow-y: scroll;
+  height: 350px;
 }

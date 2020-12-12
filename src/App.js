@@ -5,6 +5,7 @@ import NavigationBar from './Component/NavigationBar';
 import ListKategori from './Component/ListKategori';
 import ListMenu from './Component/ListMenu'
 import axios from 'axios';
+import swal from 'sweetalert';
 
 class App extends React.Component {
 
@@ -72,6 +73,56 @@ class App extends React.Component {
     })
   }
 
+  handleTambahKeranjang = (dataKeranjang) => {
+    axios.get('http://localhost:3004/keranjangs?produk.id=' + dataKeranjang.id)
+    .then((response) => {
+      if(response.data.length === 0) {
+        const dataInputKeranjang = {
+          jumlahPesan: 1,
+          hargaTotal: dataKeranjang.harga,
+          produk: dataKeranjang
+        }
+
+        axios.post('http://localhost:3004/keranjangs', dataInputKeranjang)
+        .then((response) => {
+          swal({
+            title: "Sukses Ditambahkan Keranjang",
+            text: `${dataKeranjang.nama} sukses ditambahkan`,
+            icon: "success",
+            button: "OK",
+          });
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      } else {
+        const dataInputKeranjang = {
+          jumlahPesan: response.data[0].jumlahPesan + 1,
+          hargaTotal: response.data[0].hargaTotal + dataKeranjang.harga,
+          produk: dataKeranjang
+        }
+
+        axios.put('http://localhost:3004/keranjangs/' + response.data[0].id, dataInputKeranjang)
+        .then((response) => {
+          window.location.reload();
+          swal({
+            title: "Sukses Ditambahkan Keranjang",
+            text: `${dataKeranjang.nama} sukses ditambahkan`,
+            icon: "success",
+            button: "OK",
+          });
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      }
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+  }
+
   render() {
     return (
       <Container>
@@ -84,7 +135,7 @@ class App extends React.Component {
             <Row>
               {
                 this.state.dataProduk.map((dataProduk, index) => (
-                  <ListMenu dataProduk={dataProduk} key={index}></ListMenu>
+                  <ListMenu dataProduk={dataProduk} key={index} handleTambahKeranjang={this.handleTambahKeranjang}></ListMenu>
                 ))
               }
             </Row>

@@ -17,7 +17,7 @@
     {
       "id": 1,
       "kode": "K-01",
-      "nama": "Semen Batu putri",
+      "nama": "Semen Batu Putri",
       "harga": 50000,
       "is_ready": true,
       "gambar": "semen_batu_raja.jpg",
@@ -243,6 +243,75 @@
       }
     }
   ],
-  "keranjangs": [],
+  "keranjangs": [
+    {
+      "jumlahPesan": 9,
+      "hargaTotal": 450000,
+      "produk": {
+        "id": 1,
+        "kode": "K-01",
+        "nama": "Semen Batu Putri",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_batu_raja.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 1
+    },
+    {
+      "jumlahPesan": 2,
+      "hargaTotal": 100000,
+      "produk": {
+        "id": 2,
+        "kode": "K-02",
+        "nama": "Semen Garuda",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_garuda.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 2
+    },
+    {
+      "jumlahPesan": 3,
+      "hargaTotal": 150000,
+      "produk": {
+        "id": 3,
+        "kode": "K-03",
+        "nama": "Semen Holcim",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_holcim.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 3
+    },
+    {
+      "jumlahPesan": 2,
+      "hargaTotal": 100000,
+      "produk": {
+        "id": 5,
+        "kode": "K-05",
+        "nama": "Semen Merah Putih",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_merah_putih.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 4
+    }
+  ],
   "pesanans": []
 }

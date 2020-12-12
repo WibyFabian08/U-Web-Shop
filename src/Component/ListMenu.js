@@ -12,7 +12,7 @@ class ListMenu extends React.Component {
                     <Card.Text>
                         <strong>Rp. {numberWithCommas(this.props.dataProduk.harga)}</strong>
                     </Card.Text>
-                    <Button variant="primary">Tambah Keranjang</Button>
+                    <Button variant="primary" onClick={() => this.props.handleTambahKeranjang(this.props.dataProduk)}>Tambah Keranjang</Button>
                 </Card.Body>
             </Card>
         )
