@@ -85,6 +85,9 @@ class App extends React.Component {
 
         axios.post('http://localhost:3004/keranjangs', dataInputKeranjang)
         .then((response) => {
+          setTimeout(() => {
+            window.location.reload();
+          }, 1500);
           swal({
             title: "Sukses Ditambahkan Keranjang",
             text: `${dataKeranjang.nama} sukses ditambahkan`,
@@ -104,7 +107,9 @@ class App extends React.Component {
 
         axios.put('http://localhost:3004/keranjangs/' + response.data[0].id, dataInputKeranjang)
         .then((response) => {
-          window.location.reload();
+          setTimeout(() => {
+            window.location.reload();
+          }, 1500);
           swal({
             title: "Sukses Ditambahkan Keranjang",
             text: `${dataKeranjang.nama} sukses ditambahkan`,
@@ -116,6 +121,7 @@ class App extends React.Component {
           console.log(error);
         });
       }
+      
     })
     .catch(function (error) {
       // handle error

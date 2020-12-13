@@ -13,7 +13,7 @@ class NavigationBar extends React.Component {
 
     handleShow = () => {
         this.setState({
-            showModal: true, 
+            showModal: true
         })
     }
 
@@ -40,6 +40,7 @@ class NavigationBar extends React.Component {
                         <Nav.Link href="#home" className='text-white'>Desain Rumah</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown" className='text-white'>
                         <NavDropdown.Item href="#action/3.1">Gambar AutoCad</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.1">Gambar SketchUp</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="https://github.com/WibyFabian08">My github</NavDropdown.Item>
                         <NavDropdown.Item href="#">About Me</NavDropdown.Item>

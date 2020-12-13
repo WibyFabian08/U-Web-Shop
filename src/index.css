@@ -20,6 +20,16 @@ code {
 }
 
 .list-keranjang {
-  overflow-y: scroll;
-  height: 350px;
+  overflow-y: auto;
+  height: 300px;
 }
+
+.data-keranjang:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.jumlahPesan {
+  text-align: center;
+}
+
