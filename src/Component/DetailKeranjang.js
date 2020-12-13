@@ -16,10 +16,10 @@ class DetailKeranjang extends React.Component {
                     </Modal.Header>
                     <Modal.Body>
     
-                        <Form>
+                        <Form onSubmit={(event) => this.props.handleSubmit(event)}>
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <h5>{this.props.detailKeranjang.produk.nama}</h5>
-                                <strong>Rp. {numberWithCommas(this.props.detailKeranjang.hargaTotal)}</strong>  
+                                <strong>Rp. {numberWithCommas(this.props.hargaTotal)}</strong>  
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlSelect1">
                                 <h5>Jumlah Pesanan :</h5>
@@ -33,17 +33,18 @@ class DetailKeranjang extends React.Component {
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Keterangan</Form.Label>
-                                <Form.Control as="textarea" rows={3} placeholder='Contoh : Pedas, Manis, Setengah'/>
+                                <Form.Control as="textarea" rows={3} value={this.props.keterangan} placeholder='Contoh : Pedas, Manis, Setengah' onChange={(event) => this.props.handleKeteranganChange(event)}/>
                             </Form.Group>
+
+                            <Button variant='primary' type='submit'>
+                                SIMPAN
+                            </Button>
                         </Form>
 
-                        <Button variant='primary' type='submit'>
-                            SIMPAN
-                        </Button>
                         
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="danger">
+                        <Button variant="danger" onClick={this.props.handleDelete}>
                             <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon> Hapus Pesanan
                         </Button>
                     </Modal.Footer>

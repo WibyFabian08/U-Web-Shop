@@ -243,58 +243,6 @@
       }
     }
   ],
-  "keranjangs": [
-    {
-      "jumlahPesan": 1,
-      "hargaTotal": 750000,
-      "produk": {
-        "id": 12,
-        "kode": "K-12",
-        "nama": "Batu Kali",
-        "harga": 750000,
-        "is_ready": true,
-        "gambar": "batu_kali.jpg",
-        "category": {
-          "id": 2,
-          "nama": "Bata"
-        }
-      },
-      "id": 1
-    },
-    {
-      "jumlahPesan": 4,
-      "hargaTotal": 200000,
-      "produk": {
-        "id": 2,
-        "kode": "K-02",
-        "nama": "Semen Garuda",
-        "harga": 50000,
-        "is_ready": true,
-        "gambar": "semen_garuda.jpg",
-        "category": {
-          "id": 1,
-          "nama": "Semen"
-        }
-      },
-      "id": 2
-    },
-    {
-      "jumlahPesan": 2,
-      "hargaTotal": 100000,
-      "produk": {
-        "id": 1,
-        "kode": "K-01",
-        "nama": "Semen Batu Putri",
-        "harga": 50000,
-        "is_ready": true,
-        "gambar": "semen_batu_raja.jpg",
-        "category": {
-          "id": 1,
-          "nama": "Semen"
-        }
-      },
-      "id": 3
-    }
-  ],
+  "keranjangs": [],
   "pesanans": []
 }
