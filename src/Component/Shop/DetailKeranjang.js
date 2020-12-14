@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal, Button, Form, Badge } from 'react-bootstrap';
-import { numberWithCommas } from '../Utils/FormatNumber';
+import { numberWithCommas } from '../../Utils/FormatNumber';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,7 +36,7 @@ class DetailKeranjang extends React.Component {
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <h5>Keterangan :</h5>
-                                <Form.Control as="textarea" rows={8} defaultValue={this.props.keterangan} placeholder='Contoh : Pedas, Manis, Setengah' onChange={(event) => this.props.handleKeteranganChange(event)} className='teks-area'/>
+                                <Form.Control as="textarea" rows={8} defaultValue={this.props.keterangan} placeholder='Contoh : Lokasi, No. Telepon, Waktu Kirim' onChange={(event) => this.props.handleKeteranganChange(event)} className='teks-area'/>
                             </Form.Group>
 
                             <Button variant='primary' type='submit'>

@@ -3,6 +3,7 @@ import { Navbar, NavDropdown, Nav, Button, Badge, Container } from 'react-bootst
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import ListKeranjang from './ListKeranjang';
+import { Link } from 'react-router-dom';
 
 class NavigationBar extends React.Component {
 
@@ -38,7 +39,7 @@ class NavigationBar extends React.Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="#home" className='text-white'>Desain Rumah</Nav.Link>
+                            <Nav.Link href="#home" className='text-white' as={Link} to='/'>Home</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown" className='text-white'>
                             <NavDropdown.Item href="#action/3.1">Gambar AutoCad</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.1">Gambar SketchUp</NavDropdown.Item>

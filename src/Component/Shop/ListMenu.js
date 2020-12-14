@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { numberWithCommas } from '../Utils/FormatNumber';
+import { numberWithCommas } from '../../Utils/FormatNumber';
 
 class ListMenu extends React.Component {
     render() {

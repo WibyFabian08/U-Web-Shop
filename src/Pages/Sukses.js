@@ -1,7 +1,8 @@
-import React from 'react';
-import { Button, Image } from 'react-bootstrap';
+import React, { Fragment } from 'react';
+import { Button, Image, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import NavigationBar from '../Component/Umum/NavigationBar';
 
 class Sukses extends React.Component {
 
@@ -23,14 +24,21 @@ class Sukses extends React.Component {
 
     render() {
         return (
-            <div className="mt-4 text-center">
-                <Image src='asset/images/sukses.png' width='500'></Image>
-                <h2>Sukses</h2>
-                <h6>Terimakasih Sudah Memesan</h6>
-                <Button variant='primary' as={Link} to='/'> 
-                    Kembali
-                </Button>
-            </div>
+            <Fragment>
+                <Container>
+                    <div className='header'>
+                        <NavigationBar></NavigationBar>
+                    </div>
+                    <div className="mt-5 text-center body">
+                        <Image src='asset/images/sukses.png' width='500'></Image>
+                        <h2>Sukses</h2>
+                        <h6>Terimakasih Sudah Memesan</h6>
+                        <Button variant='primary' as={Link} to='/home'> 
+                            Kembali
+                        </Button>
+                    </div>
+                </Container>
+            </Fragment>
         )
     }
 }

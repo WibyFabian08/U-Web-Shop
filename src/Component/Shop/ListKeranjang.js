@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { Modal, Button, ListGroup, Row, Col, Badge } from 'react-bootstrap';
-import { numberWithCommas } from '../Utils/FormatNumber';
+import { numberWithCommas } from '../../Utils/FormatNumber';
 import DetailKeranjang from './DetailKeranjang';
 import axios from 'axios';
 import swal from 'sweetalert';

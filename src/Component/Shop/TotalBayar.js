@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 import { Button } from 'react-bootstrap';
-import { numberWithCommas } from '../Utils/FormatNumber';
+import { numberWithCommas } from '../../Utils/FormatNumber';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
+import swal from 'sweetalert';
 
 class TotalBayar extends React.Component {
 
@@ -15,8 +16,31 @@ class TotalBayar extends React.Component {
 
         axios.post('http://localhost:3004/pesanans', pesanan)
         .then((response => {
+            swal({
+                title: "Pembayaran Sukses",
+                text: `Sukses Dipesan`,
+                icon: "success",
+                button: "OK",
+              });
             this.props.history.push('/sukses');
         }))
+    }
+
+    peringatan = () => {
+        swal({
+            title: "Anda Belum Memesan",
+            text: `Silahkan Pesan Sesuatu`,
+            icon: "error",
+            button: "OK",
+          });
+    }
+
+    isBayar = (totalBayar) => {
+        if(totalBayar === 0) {
+            this.peringatan()
+        } else {
+            this.submitTotalBayar(totalBayar)
+        }
     }
 
     render() {
@@ -28,7 +52,7 @@ class TotalBayar extends React.Component {
         return (
             <Fragment>
                 <h5>Total Harga <strong className='float-right'>Rp. {numberWithCommas(totalBayar)}</strong> </h5>
-                <Button variant="primary" block onClick={() => this.submitTotalBayar(totalBayar)}>
+                <Button variant="primary" block onClick={() => this.isBayar(totalBayar)}>
                     <FontAwesomeIcon icon ={faShoppingCart}></FontAwesomeIcon><strong> BAYAR</strong>
                 </Button>
             </Fragment>
