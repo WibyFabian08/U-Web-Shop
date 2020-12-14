@@ -11,8 +11,9 @@ class ListKategori extends React.Component {
                     {
                         this.props.dataKategori.map((dataKategori, index) => (
                             <ListGroup.Item
-                             key={index} onClick={() => this.props.handlePilihKategori(dataKategori.nama)}
-                             className={this.props.pilihKategori === dataKategori.nama && 'bg-primary'}
+                            key={index} onClick={() => this.props.handlePilihKategori(dataKategori.nama)}
+                            className={this.props.pilihKategori === dataKategori.nama && 'bg-primary'}
+                            id= 'list-hover'
                             >
                                 {dataKategori.nama}
                             </ListGroup.Item>

@@ -5,6 +5,7 @@ import { numberWithCommas } from '../Utils/FormatNumber';
 import DetailKeranjang from './DetailKeranjang';
 import axios from 'axios';
 import swal from 'sweetalert';
+import TotalBayar from './TotalBayar';
 
 class ListKeranjang extends React.Component {
 
@@ -66,15 +67,14 @@ class ListKeranjang extends React.Component {
 
         axios.put('http://localhost:3004/keranjangs/' + this.state.detailKeranjang.id, dataUpdate)
         .then((response) => {
-        setTimeout(() => {
-            window.location.reload();
-            }, 1500);
-          swal({
-            title: "Update Keranjang Sukses",
-            text: 'Pesanan Sukses Di-Update',
-            icon: "success",
-            button: "OK",
-          });
+            this.props.getListKeranjang();
+            this.handleClose();
+            swal({
+                title: "Update Keranjang Sukses",
+                text: 'Pesanan Sukses Diupdate',
+                icon: "success",
+                button: "OK",
+            });
         })
         .catch(function (error) {
           console.log(error);
@@ -84,15 +84,14 @@ class ListKeranjang extends React.Component {
     handleDelete = () => {
         axios.delete('http://localhost:3004/keranjangs/' + this.state.detailKeranjang.id)
         .then((response) => {
-        setTimeout(() => {
-            window.location.reload();
-            }, 1500);
-          swal({
-            title: "Delete Pesanan Sukses",
-            text: 'Pesanan Sukses Di-Hapus',
-            icon: "success",
-            button: "OK",
-          });
+            this.props.getListKeranjang();
+            this.handleClose();
+            swal({
+                title: "Delete Pesanan Sukses",
+                text: 'Pesanan Sukses Dihapus',
+                icon: "error",
+                button: "OK",
+            });
         })
         .catch(function (error) {
           console.log(error);
@@ -128,10 +127,14 @@ class ListKeranjang extends React.Component {
                             }
                         </ListGroup>
                     </Modal.Body>
+                    <Modal.Body>
+                        <TotalBayar dataKeranjang={this.props.dataKeranjang} {...this.props}></TotalBayar>
+                    </Modal.Body>
+                
                     <Modal.Footer>
-                    <Button variant="secondary" onClick={this.props.handleClose}>
-                        Close
-                    </Button>
+                        <Button variant="secondary" onClick={this.props.handleClose}>
+                            Close
+                        </Button>
                     </Modal.Footer>
                 </Modal>
     

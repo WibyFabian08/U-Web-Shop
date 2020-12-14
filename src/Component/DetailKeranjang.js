@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button, Form } from 'react-bootstrap';
+import { Modal, Button, Form, Badge } from 'react-bootstrap';
 import { numberWithCommas } from '../Utils/FormatNumber';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -26,14 +26,17 @@ class DetailKeranjang extends React.Component {
                                 <Button variant='primary' size="sm" className='mr-3' onClick={this.props.handleKurang}>
                                     <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
                                 </Button>
-                                <input type="text" value={this.props.jumlahPesan} className='jumlahPesan'></input>
+                                <Button variant="primary">
+                                    Jumlah Pesan <Badge variant="light"> {this.props.jumlahPesan}</Badge>
+                                    <span className="sr-only">unread messages</span>
+                                </Button>
                                 <Button variant='primary' size="sm" className='ml-3' onClick={() => this.props.handleTambah()} >
                                     <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
                                 </Button>
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Keterangan</Form.Label>
-                                <Form.Control as="textarea" rows={3} value={this.props.keterangan} placeholder='Contoh : Pedas, Manis, Setengah' onChange={(event) => this.props.handleKeteranganChange(event)}/>
+                                <h5>Keterangan :</h5>
+                                <Form.Control as="textarea" rows={8} defaultValue={this.props.keterangan} placeholder='Contoh : Pedas, Manis, Setengah' onChange={(event) => this.props.handleKeteranganChange(event)} className='teks-area'/>
                             </Form.Group>
 
                             <Button variant='primary' type='submit'>
@@ -41,8 +44,8 @@ class DetailKeranjang extends React.Component {
                             </Button>
                         </Form>
 
-                        
                     </Modal.Body>
+
                     <Modal.Footer>
                         <Button variant="danger" onClick={this.props.handleDelete}>
                             <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon> Hapus Pesanan

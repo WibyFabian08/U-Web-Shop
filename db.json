@@ -244,5 +244,86 @@
     }
   ],
   "keranjangs": [],
-  "pesanans": []
+  "pesanans": [
+    {
+      "totalBayar": 100000,
+      "pesanan": [
+        {
+          "jumlahPesan": 1,
+          "hargaTotal": 50000,
+          "produk": {
+            "id": 3,
+            "kode": "K-03",
+            "nama": "Semen Holcim",
+            "harga": 50000,
+            "is_ready": true,
+            "gambar": "semen_holcim.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Semen"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlahPesan": 1,
+          "hargaTotal": 50000,
+          "produk": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "Semen Garuda",
+            "harga": 50000,
+            "is_ready": true,
+            "gambar": "semen_garuda.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Semen"
+            }
+          },
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "totalBayar": 800000,
+      "pesanan": [
+        {
+          "jumlahPesan": 1,
+          "hargaTotal": 50000,
+          "produk": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "Semen Garuda",
+            "harga": 50000,
+            "is_ready": true,
+            "gambar": "semen_garuda.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Semen"
+            }
+          },
+          "id": 1
+        },
+        {
+          "jumlahPesan": 1,
+          "hargaTotal": 750000,
+          "produk": {
+            "id": 7,
+            "kode": "K-07",
+            "nama": "Bata Merah",
+            "harga": 750000,
+            "is_ready": true,
+            "gambar": "bata_merah.jpg",
+            "category": {
+              "id": 2,
+              "nama": "Bata"
+            }
+          },
+          "id": 2
+        }
+      ],
+      "id": 2
+    }
+  ]
 }
