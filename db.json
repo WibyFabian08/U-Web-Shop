@@ -243,6 +243,24 @@
       }
     }
   ],
-  "keranjangs": [],
+  "keranjangs": [
+    {
+      "jumlahPesan": 1,
+      "hargaTotal": 50000,
+      "produk": {
+        "id": 2,
+        "kode": "K-02",
+        "nama": "Semen Garuda",
+        "harga": 50000,
+        "is_ready": true,
+        "gambar": "semen_garuda.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Semen"
+        }
+      },
+      "id": 1
+    }
+  ],
   "pesanans": []
 }

@@ -51,9 +51,9 @@ class TotalBayar extends React.Component {
 
         return (
             <Fragment>
-                <h5>Total Harga <strong className='float-right'>Rp. {numberWithCommas(totalBayar)}</strong> </h5>
+                <h5>Total Price <strong className='float-right'>Rp. {numberWithCommas(totalBayar)}</strong> </h5>
                 <Button variant="primary" block onClick={() => this.isBayar(totalBayar)}>
-                    <FontAwesomeIcon icon ={faShoppingCart}></FontAwesomeIcon><strong> BAYAR</strong>
+                    <FontAwesomeIcon icon ={faShoppingCart}></FontAwesomeIcon><strong> PAY NOW</strong>
                 </Button>
             </Fragment>
         )

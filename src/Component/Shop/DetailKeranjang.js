@@ -11,7 +11,7 @@ class DetailKeranjang extends React.Component {
                 <Modal show={this.props.showModal} onHide={this.props.handleClose} animation={false}>
                     <Modal.Header closeButton>
                     <Modal.Title>
-                        Edit Pesanan
+                        Edit Order
                     </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
@@ -22,12 +22,12 @@ class DetailKeranjang extends React.Component {
                                 <strong>Rp. {numberWithCommas(this.props.hargaTotal)}</strong>  
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlSelect1">
-                                <h5>Jumlah Pesanan :</h5>
+                                <h5>Total Order :</h5>
                                 <Button variant='primary' size="sm" className='mr-3' onClick={this.props.handleKurang}>
                                     <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
                                 </Button>
                                 <Button variant="primary">
-                                    Jumlah Pesan <Badge variant="light"> {this.props.jumlahPesan}</Badge>
+                                    Total Order <Badge variant="light"> {this.props.jumlahPesan}</Badge>
                                     <span className="sr-only">unread messages</span>
                                 </Button>
                                 <Button variant='primary' size="sm" className='ml-3' onClick={() => this.props.handleTambah()} >
@@ -35,12 +35,12 @@ class DetailKeranjang extends React.Component {
                                 </Button>
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <h5>Keterangan :</h5>
-                                <Form.Control as="textarea" rows={8} defaultValue={this.props.keterangan} placeholder='Contoh : Lokasi, No. Telepon, Waktu Kirim' onChange={(event) => this.props.handleKeteranganChange(event)} className='teks-area'/>
+                                <h5>Information :</h5>
+                                <Form.Control as="textarea" rows={8} defaultValue={this.props.keterangan} placeholder='Example : Lokasi, No. Telepon, Waktu Kirim' onChange={(event) => this.props.handleKeteranganChange(event)} className='teks-area'/>
                             </Form.Group>
 
                             <Button variant='primary' type='submit'>
-                                SIMPAN
+                                SAVE
                             </Button>
                         </Form>
 
@@ -48,7 +48,7 @@ class DetailKeranjang extends React.Component {
 
                     <Modal.Footer>
                         <Button variant="danger" onClick={this.props.handleDelete}>
-                            <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon> Hapus Pesanan
+                            <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon> Delete Order
                         </Button>
                     </Modal.Footer>
                 </Modal>

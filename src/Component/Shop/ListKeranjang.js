@@ -103,7 +103,7 @@ class ListKeranjang extends React.Component {
             <Fragment>
                 <Modal show={this.props.showModal} onHide={this.props.handleClose} animation={false}>
                     <Modal.Header closeButton>
-                    <Modal.Title>Keranjang Anda</Modal.Title>
+                    <Modal.Title>Your Cart</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <ListGroup className='list-keranjang'>
