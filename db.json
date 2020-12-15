@@ -243,24 +243,128 @@
       }
     }
   ],
-  "keranjangs": [
+  "keranjangs": [],
+  "pesanans": [],
+  "rumah": [
     {
-      "jumlahPesan": 1,
-      "hargaTotal": 50000,
-      "produk": {
-        "id": 2,
-        "kode": "K-02",
-        "nama": "Semen Garuda",
-        "harga": 50000,
-        "is_ready": true,
-        "gambar": "semen_garuda.jpg",
-        "category": {
-          "id": 1,
-          "nama": "Semen"
-        }
-      },
-      "id": 1
+      "id": 1,
+      "kode": "R-1",
+      "nama": "Desain Bohemian",
+      "gambar": "rumah1",
+      "detail": {
+        "luas_tanah": 350,
+        "luas_bangunan": 200,
+        "deskripsi": "Gaya bohemian adalah gaya yang penuh warna dan bercampur antara gaya etnik dan juga vintage. Konsep desain interior bohemian yaitu menggambarkan gaya hidup non-tradisional dari orang-orang yang hidup mengembara atau gelandangan pada pertengahan tahun 1.800-an.",
+        "denah": "denah1.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "kode": "R-2",
+      "nama": "Desain Tudor",
+      "gambar": "rumah2",
+      "detail": {
+        "luas_tanah": 320,
+        "luas_bangunan": 250,
+        "deskripsi": "Desain rumah bergaya tudor merupakan salah satu gaya arsitektur unik dari negara Inggirs. ... Ciri khas rumah bergaya tudor ini memiliki atap yang meruncing ke atas dengan sentuhan jendela yang juga sangat curam serta memilki jendela sendiri yang terbuat dari susunan batu dengan sentuhan kayu yang indah",
+        "denah": "denah2.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "kode": "R-3",
+      "nama": "Desain Coastal Style",
+      "gambar": "rumah3",
+      "detail": {
+        "luas_tanah": 240,
+        "luas_bangunan": 180,
+        "deskripsi": "Desain interior Coastal Style adalah gaya dekorasi ruangan yang dekat dengan natural ala pantai. Ruang tamu sederhana juga bisa kok, didesain ala coastal cottage.",
+        "denah": "denah3.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "kode": "R-4",
+      "nama": "Desain Eklektik",
+      "gambar": "rumah4",
+      "detail": {
+        "luas_tanah": 320,
+        "luas_bangunan": 260,
+        "deskripsi": "Menurut interior desainer Le Priescha, gaya desain eklektik adalah kombinasi dari berbagai macam gaya desain, ide, dan teori dari berbagai macam periode waktu, yang menghasilkan satu kesatuan unik. Penerapannya sudah dimulai sejak abad ke-20 dan makin bertambah peminatnya hingga sekarang.",
+        "denah": "denah4.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "kode": "R-5",
+      "nama": "Desain Industrial",
+      "gambar": "rumah5",
+      "detail": {
+        "luas_tanah": 360,
+        "luas_bangunan": 280,
+        "deskripsi": "Desain rumah gaya industrial adalah soal ekspos dan memamerkan komponen serta elemen struktural sebuah bangunan. ... Gaya industrial kerap dianggap sebagai gaya unik yang identik dengan gaya interior yang banyak diterapkan pada cafe atau beberapa bangunan komersial, seperti ruang-ruang perkantoran.",
+        "denah": "denah5.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "kode": "R-6",
+      "nama": "Desain Kontemporer",
+      "gambar": "rumah6",
+      "detail": {
+        "luas_tanah": 360,
+        "luas_bangunan": 280,
+        "deskripsi": "Modern mengacu pada arsitektur modernis yang ada pada awal hingga pertengahan abad 20. Kontemporer pada dasarnya adalah gaya desain yang sedang up to date atau sedang diproduksi pada masa sekarang. Kontemporer bersifat dinamis dan tidak terikat oleh suatu era.",
+        "denah": "denah6.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "kode": "R-7",
+      "nama": "Desain Kontemporer",
+      "gambar": "rumah7",
+      "detail": {
+        "luas_tanah": 300,
+        "luas_bangunan": 220,
+        "deskripsi": "Modern mengacu pada arsitektur modernis yang ada pada awal hingga pertengahan abad 20. Kontemporer pada dasarnya adalah gaya desain yang sedang up to date atau sedang diproduksi pada masa sekarang. Kontemporer bersifat dinamis dan tidak terikat oleh suatu era.",
+        "denah": "denah7.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "kode": "R-8",
+      "nama": "Desain Modern",
+      "gambar": "rumah8",
+      "detail": {
+        "luas_tanah": 300,
+        "luas_bangunan": 220,
+        "deskripsi": "Modern adalah istilah desain yang luas yang biasanya mengacu pada rumah dengan garis bersih dan tajam, palet warna sederhana, dan penggunaan material yang bisa meliputi logam, kaca, dan baja. Desain modern menggunakan rasa kesederhanaan di setiap elemen, termasuk pada furniture.",
+        "denah": "denah8.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "kode": "R-9",
+      "nama": "Desain Rustic",
+      "gambar": "rumah9",
+      "detail": {
+        "luas_tanah": 300,
+        "luas_bangunan": 220,
+        "deskripsi": "Dalam Bahasa Indonesia, gaya Rustic diartikan sebagai berkarat atau tua. Sedangkan, dalam dunia arsitektur dan interior gaya rustic diartikan memiliki tekstur yang kasar dan tidak di-finishing dengan baik. Maksudnya adalah penataan desain rumah dan interior yang lebih menitik-beratkan pada kesan alamiah.",
+        "denah": "denah9.jpg"
+      }
+    },
+    {
+      "id": 10,
+      "kode": "R-10",
+      "nama": "Desain Skandinavia",
+      "gambar": "rumah10",
+      "detail": {
+        "luas_tanah": 300,
+        "luas_bangunan": 220,
+        "deskripsi": "Rumah Scandinavian atau Scandinavian house ini adalah desain rumah yang diserap dari gaya bangunan negara-negara di Eropa Utara seperti Denmark, Norway, dan Swedia. Bangunannya sederhana dan didominasi oleh warna-warna netral seperti putih, abu, hitam, dan coklat.",
+        "denah": "denah10.jpg"
+      }
     }
-  ],
-  "pesanans": []
+  ]
 }

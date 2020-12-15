@@ -4,3 +4,5 @@ import ListKeranjang from './ListKeranjang';
 import ListMenu from './ListMenu';
 import NavigationBar from './NavigationBar';
 import TotalBayar from './TotalBayar';
+
+export { DetailKeranjang, ListKategori, ListKeranjang, ListMenu, NavigationBar, TotalBayar};

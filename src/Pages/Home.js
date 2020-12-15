@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import NavigationBar from '../Component/Shop/NavigationBar';
-import ListKategori from '../Component/Shop/ListKategori';
-import ListMenu from '../Component/Shop/ListMenu'
+import { NavigationBar, ListKategori, ListMenu } from '../Component/Shop';
 import axios from 'axios';
 import swal from 'sweetalert';
 

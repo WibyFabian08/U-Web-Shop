@@ -44,11 +44,27 @@ html {
 
 .copyright {
   width: 100%;
-  height: 60px;
+  height: 40px;
   background-color: darkslategrey;
 }
 
 .text {
-  line-height: 60px;
+  line-height: 40px;
   font-size: 12px;
+}
+
+.footer {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.body {
+  margin-bottom: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.list-rumah:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
