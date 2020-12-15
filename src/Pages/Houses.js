@@ -36,11 +36,7 @@ class Houses extends React.Component {
                         <h2>Daftar Referensi Rumah</h2>
                         <hr/>
                         <Row className='d-flex justify-content-center'>
-                            {
-                                this.state.dataRumah.map((data, index) => (
-                                    <ListRumah dataRumah={data} key={index}></ListRumah>
-                                ))
-                            }
+                            <ListRumah dataRumah={this.state.dataRumah}></ListRumah>
                         </Row>
                     </div>
                     <Copyright></Copyright>

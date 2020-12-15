@@ -42,6 +42,7 @@ class NavigationBar extends React.Component {
                             <Nav.Link href="#home" className='text-white' as={Link} to='/'>Home</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown" className='text-white'>
                             <NavDropdown.Item href="#action/3.1">AutoCad</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/home'>Building Materials</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.1">Google SketchUp</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to='/houses'>Modern House</NavDropdown.Item>
                             <NavDropdown.Divider />
